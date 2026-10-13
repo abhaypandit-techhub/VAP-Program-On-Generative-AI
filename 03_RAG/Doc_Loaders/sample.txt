@@ -1,0 +1,43 @@
+******HOW TO CREATE VIRTUAL ENVIRONMENT******
+
+METHOD - 1
+
+i) pip install virtualenv
+ii) python -m venv VirtualEnvName
+
+
+---#   HOW TO ACTIVATE
+i) VirtualEnvName\Scripts\Activate.ps1
+           
+            OR
+
+.\VirtualEnvName\Scripts\Activate.ps1
+
+
+METHOD - 2 (Recommended)
+  
+Notes : You must to install annaconda to use conda utility
+
+i) conda create -p VirtualEnvName python==3.x.x -y   # create environment with different python version
+
+
+---#  How to check environment Activate or not
+
+(i) conda env list
+          
+          OR
+
+   conda info --envs
+
+---# HOW TO ACTIVATE 
+i) conda activate VirtualEnvNam
+ii) conda activate .\VirtualEnvName # use when left side VirtualEnvName not mentioned
+
+---# HOW TO DELETE VIRTUAL ENVIRONMENT IN CONDA
+
+i) first conda deactivate
+ii) conda env remove -n VirtualEnvNamev -y
+
+-- with path 
+
+conda env remove -p .\VirtualEnvName -y
